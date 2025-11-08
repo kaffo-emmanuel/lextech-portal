@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LexTech Portal | Law & Technology</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner"></div>
+    <p>Loading LexTech Portal...</p>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">LexTech<span>Portal</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#community">Community</a>
+      <a href="#contact">Contact</a>
+      <a href="#login" class="login-btn">Login</a>
+    </nav>
+    <button id="themeToggle">🌗</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Empowering the Future of Law Through Technology</h1>
+      <p>Learn, connect, and grow in the evolving world of TechLaw.</p>
+      <button id="getStartedBtn">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="login-section">
+    <h2>Login to Your Account</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <!-- Dashboard Section -->
+  <section id="courses" class="dashboard">
+    <h2>Available TechLaw Courses</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <h3>Cybersecurity & Privacy Law</h3>
+        <p>Understand digital rights, data protection, and global privacy frameworks.</p>
+        <button class="enroll-btn">Enroll</button>
+      </div>
+      <div class="course-card">
+        <h3>AI & Legal Ethics</h3>
+        <p>Explore the ethical dimensions of AI in legal systems and practice.</p>
+        <button class="enroll-btn">Enroll</button>
+      </div>
+      <div class="course-card">
+        <h3>Blockchain & Smart Contracts</h3>
+        <p>Dive into decentralized systems, crypto-law, and automated legal agreements.</p>
+        <button class="enroll-btn">Enroll</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" class="community">
+    <h2>Community Forum</h2>
+    <div id="community-feed">
+      <p><strong>@AdaLaw</strong>: Has anyone explored AI policy in Nigeria’s judiciary?</p>
+      <p><strong>@TechBarrister</strong>: Yes! There’s an interesting case study in 2023...</p>
+    </div>
+    <textarea id="postInput" placeholder="Share your thoughts..."></textarea>
+    <button id="postBtn">Post</button>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Chatbot Widget -->
+  <div id="chatbot">
+    <div id="chatbot-icon">💬</div>
+    <div id="chatbox" class="hidden">
+      <div class="chat-header">LexiBot</div>
+      <div class="chat-body" id="chatBody">
+        <p>Hello 👋! I’m LexiBot — your TechLaw assistant.</p>
+      </div>
+      <input type="text" id="chatInput" placeholder="Type a message..." />
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 LexTech Portal. All rights reserved.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
